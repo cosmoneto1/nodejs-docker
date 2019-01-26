@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node ./serve.js",
+    "dev": "node ./serve.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosmoneto1/nodejs-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cosmoneto1/nodejs-docker/issues"
+  },
+  "homepage": "https://github.com/cosmoneto1/nodejs-docker#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
