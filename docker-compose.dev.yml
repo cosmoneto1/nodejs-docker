@@ -2,9 +2,20 @@ version: '2.1'
 
 services:
   nodejs-docker:
+    container_name: nodejs-docker-dev
     image: nodejs-docker-dev
     build: .
     environment:
       NODE_ENV: develop
     ports:
       - 3000:3000
+    depends_on:
+      - mongodb
+
+  mongodb:
+    container_name: mongodb-dev
+    image: mongo
+    environment:      
+      MONGO_INITDB_DATABASE: test
+    ports:
+      - "27017:27017"
